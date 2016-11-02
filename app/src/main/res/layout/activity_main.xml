@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.volleyexample.MainActivity">
+
+    <EditText
+        android:id="@+id/username_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="username" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sendSampleRequest"
+        android:text="send sample request" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="fetchImage"
+        android:text="fetch images" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="64dip"
+        android:layout_height="64dip" />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/networkImageView"
+        android:layout_width="64dip"
+        android:layout_height="64dip" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getUsersGson"
+        android:text="get users gson" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="listReposOfUser"
+        android:text="list user repos" />
+</LinearLayout>
